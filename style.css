@@ -33,3 +33,44 @@ li{
 p {
     margin: 0;
 }
+
+/*Probando Skeleton*/
+.skeleton-card {
+    background: linear-gradient(90deg, #e0e0e0 25%, #f0f0f0 50%, #e0e0e0 75%);
+    background-size: 200% 100%;
+    animation: shimmer 1.2s infinite;
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: -200% 0;
+    }
+    100% {
+        background-position: 200% 0;
+    }
+}
+
+.skeleton {
+    background-color: #ddd;
+    border-radius: 8px;
+    animation: pulse 1.2s infinite ease-in-out;
+}
+
+.skeleton-img {
+    width: 96px;
+    height: 96px;
+    margin: auto;
+}
+
+.skeleton-text {
+    height: 16px;
+    width: 80%;
+    margin: 10px auto;
+    border-radius: 4px;
+}
+
+@keyframes pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.4; }
+    100% { opacity: 1; }
+}
