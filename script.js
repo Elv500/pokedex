@@ -31,6 +31,7 @@ function createPokemon(pokemon){
 
     const imagen = document.createElement('img');
     imagen.src = pokemon.sprites.front_default;
+    imagen.style.filter = "drop-shadow(0 0 5px gray)"
 
     const number = document.createElement('p');
     number.textContent = `#${pokemon.id.toString().padStart(3, 0)}`;
