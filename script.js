@@ -36,7 +36,7 @@ function createPokemon(pokemon){
     number.textContent = `#${pokemon.id.toString().padStart(3, 0)}`;
 
     const name = document.createElement('div');
-    name.textContent = pokemon.name;
+    name.textContent = pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1);
 
     const element = document.createElement('li');
     element.append(number);
@@ -46,7 +46,7 @@ function createPokemon(pokemon){
     lista.append(element);
 }
 
-showPokemons(80);
+showPokemons(100);
 
 function showSkeletons(count) {
     for (let i = 0; i < count; i++) {
